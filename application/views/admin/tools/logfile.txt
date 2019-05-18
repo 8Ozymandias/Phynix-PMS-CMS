@@ -1,0 +1,209 @@
+<section class="mainsec">
+	<ul id="crent" class="tabs">
+    <li class="tab"><a class="waves-effect waves-light" href="#t1">Collect Rent</a></li>
+    <li class="tab"><a class="waves-effect waves-light" href="#t3">Pay Landlord</a></li>
+    <li class="tab"><a class="waves-effect waves-light" href="#t4">View Transaction History</a></li>
+  </ul>
+
+  <div class="tabs-content carousel carousel-slider" >
+  	<div id="t1" class="carousel-item active">
+
+  		<article class="colrentarea">
+  			 <ul class="collapsible expandable">
+    <li>
+      <div class="collapsible-header"><div><i class="material-icons">person_pin</i> <span class="tooltipped" data-position="top" data-tooltip="Tenant">Jordaine Gayle</span></div><span class="tooltipped" data-position="top" data-tooltip="Current Rent. Due: 09/10/2018">$15,000.00</span><i class="material-icons tooltipped" data-position="top" data-tooltip="Edit">edit</i></div>
+
+      <div class="collapsible-body">
+
+      	<!-- row 1 -->
+      	<div class="row">
+      	<div class="input-field col s6">
+      <input disabled="disabled" id="first_name2" type="text" class="validate" value="1 West Cost Drive" title="cannot edit">
+      <label class="active" for="first_name2">Property</label>
+    </div>
+    <div class="input-field col s6">
+      <input disabled="disabled" value="John Perk" id="first_name3" type="text" class="validate" title="cannot edit">
+      <label class="active" for="first_name3">Landlord</label>
+    </div>
+      </div>
+
+      <!-- row 2 -->
+      	<div class="row">
+
+      <div class="input-field col s6">
+      <input value="0.00" id="first_name4" type="number" class="validate">
+      <label class="active" for="first_name4">Enter Payment Amount</label>
+    </div>
+
+    <div class="input-field col s6">
+      <input value="today()" id="first_name5" type="date" class="validate">
+      <label class="active" for="first_name5">Select Payment Date</label>
+    </div>
+      </div>
+
+      <div class="butn">
+
+      	<a class="waves-effect waves-light btn">Collect Payment</a>
+      	<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Expand View</a>
+
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+     </div>
+     <div id="modal1" class="modal modal-fixed-footer" href="#modal1" >
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+      <!-- row 3 -->
+     <!--  <div class="input-field col s12 m6">
+    		<select class="icons">
+      		<option value="0" disabled selected>Select past due</option>
+      		<option value="1" data-icon="<?php //echo base_url("assets/pay.png");?>" class="left">$15,0000</option>
+      		<option value="2" data-icon="<?php //echo base_url("assets/pay.png");?>" class="left">$32,000</option>
+      		<option value="3" data-icon="<?php //echo base_url("assets/pay.png");?>" class="left">$90,000</option>
+    		</select>
+    		<label>Past Due Amount</label>
+  		</div> -->
+  </div>
+
+    </li>
+
+    <li>
+      <div class="collapsible-header"><div><i class="material-icons">person_pin</i> <span class="tooltipped" data-position="top" data-tooltip="Tenant">Howie Gayle</span></div><span class="tooltipped" data-position="top" data-tooltip="Amount Due">$15,000.00</span><i class="material-icons tooltipped" data-position="top" data-tooltip="Edit">edit</i></div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+
+    <li>
+      <div class="collapsible-header"><div><i class="material-icons">person_pin</i> <span class="tooltipped" data-position="top" data-tooltip="Tenant">Mazerine Smith</span></div><span class="tooltipped" data-position="top" data-tooltip="Amount Due">$15,000.00</span><i class="material-icons tooltipped" data-position="top" data-tooltip="Edit">edit</i></div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+
+  </ul>
+  		</article>
+
+  </div>
+
+  <div id="t3" class="carousel-item">
+  	Test 3
+  </div>
+
+  	<div id="t4" class="carousel-item">
+  	Test 4
+  </div>
+  </div>
+ </section>
+
+</body>
+
+<script type="text/javascript">
+	  $(document).ready(function(){
+    $('.tabs').tabs({
+    	swipeable : true,
+      responsiveThreshold : 1920
+    });
+
+    $(".collapsible").collapsible({
+    	inDuration: 600,
+    	outDuration: 600
+    });
+
+    $(".tooltipped").tooltip();
+    $('.icons').formSelect();
+    $('.modal').modal();
+  });
+</script>
+
+
+
+
+$f = 27 + ((13*7-1)/5) + 18 + (18/4) + (20/4) - 2*20;
+$g = floatval($f%7); figure out which day formula
+
+
+How do I find the day of the week for any date?
+There are two popular formulas that you can use to find the day of the week for a given date. You should be careful when you use these formulas, though, because they only work for the Gregorian calendar. (People in English-speaking countries used a different calendar before September 14, 1752.)
+
+Zeller's Rule
+
+The following formula is named Zeller's Rule after a Reverend Zeller. [x] means the greatest integer that is smaller than or equal to x. You can find this number by just dropping everything after the decimal point. For example, [3.79] is 3. Here's the formula:
+
+f = k + [(13*m-1)/5] + D + [D/4] + [C/4] - 2*C.
+
+k is the day of the month. Let's use January 29, 2064 as an example. For this date, k = 29.
+m is the month number. Months have to be counted specially for Zeller's Rule: March is 1, April is 2, and so on to February, which is 12. (This makes the formula simpler, because on leap years February 29 is counted as the last day of the year.) Because of this rule, January and February are always counted as the 11th and 12th months of the previous year. In our example, m = 11.
+D is the last two digits of the year. Because in our example we are using January (see previous bullet) D = 63 even though we are using a date from 2064.
+C stands for century: it's the first two digits of the year. In our case, C = 20.
+
+
+
+// public function date_difference($start_date, $end_date, $interval){
+//
+// 	if(empty($start_date) || empty($end_date)){
+// 		return "Please fill out the feild left empty";
+// 	}else{
+//
+//
+//
+// 	if(!is_string($start_date) || !is_string($end_date)){
+// 		return "You must enter a string to begin with";
+// 	}else{
+// 		$str_array = array();
+// 		$end_array = array();
+// 		$sarray = array();
+// 		$earray = array();
+// 		if(strpos($start_date, '/') !== false){
+// 			$str_array = explode("/", $start_date);
+// 		}else if(strpos($start_date, '-') !== false){
+// 			$str_array = explode("-", $start_date);
+// 		}else if(strpos($start_date, ':') !== false){
+// 			$str_array = explode(":", $start_date);
+// 		}else if(strpos($start_date, '.') !== false){
+// 			$str_array = explode(".", $start_date);
+// 		}else{
+// 			return "Your start date has an incorrect date format must be . / : - between digits";
+// 		}
+//
+// 		if(strpos($end_date, '/') !== false){
+// 			$end_array = explode("/", $end_date);
+// 		}else if(strpos($end_date, '-') !== false){
+// 			$end_array = explode("-", $end_date);
+// 		}else if(strpos($end_date, ':') !== false){
+// 			$end_array = explode(":", $end_date);
+// 		}else if(strpos($end_date, '.') !== false){
+// 			$end_array = explode(".", $end_date);
+// 		}else{
+// 			return "Your start date has an incorrect date format must be . / : - between digits";
+// 		}
+//
+// 		foreach($str_array as $key => $value){
+// 			$sarray[$key] = $value;
+// 		}
+//
+// 		foreach($end_array as $key => $value){
+// 			$earray[$key] = $value;
+// 		}
+//
+// 		foreach($sarray as $key => $value){
+// 			echo "Key for start date = ".$key." => ".$value."<br/>";
+// 		}
+//
+// 		foreach($earray as $key => $value){
+// 			echo "Key for end date = ".$key." => ".$value."<br/>";
+// 		}
+//
+// 		}
+// 	}
+// }

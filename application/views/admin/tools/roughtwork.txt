@@ -1,0 +1,57 @@
+<!--   			<table class="responsive-table highlight center">
+  				
+  				<thead>
+  					
+  					<tr>
+  						<th>Tenat ID</th>
+  						<th>Tenant Name</th>
+  						<th>Landlord</th>
+  						<th>House Id</th>
+  						<th>Amount Owed</th>
+  						<th>Collect Rent</th>
+  					</tr>
+
+  				</thead>
+
+  				<tbody>
+  					
+  					<tr>
+  						<td>12</td>
+  						<td>Jordaine Gayle</td>
+  						<td>Mazerine Smith</td>
+  						<td>34</td>
+  						<td>$12,000.00</td>
+  						<td><button class="btn waves-effect waves-light" type="submit" name="action">Collect
+    <i class="material-icons right">money</i>
+  </button>
+
+</td>
+
+
+  					</tr>
+
+  					<tr>
+  						<td>12</td>
+  						<td>Jordaine Gayle</td>
+  						<td>Mazerine Smith</td>
+  						<td>34</td>
+  						<td>$75,000.00</td>
+  						<td><button class="btn waves-effect waves-light" type="submit" name="action">Collect
+    <i class="material-icons right">money</i>
+  </button></td>
+  					</tr>
+
+  					<tr>
+  						<td>12</td>
+  						<td>Jordaine Gayle</td>
+  						<td>Mazerine Smith</td>
+  						<td>34</td>
+  						<td>$34,000.00</td>
+  						<td><button class="btn waves-effect waves-light" type="submit" name="action">Collect
+    <i class="material-icons right">money</i>
+  </button></td>
+  					</tr>
+
+  				</tbody>
+
+  			</table> -->

@@ -1,0 +1,97 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	font-family: "Ebrima", "Calibri", "Times New Roman", serif;
+}
+
+body{
+	background-color: #E0E0E0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+section{
+	margin-top: 10%;
+	background-color: #F5F5F5;
+	width: 20%;
+	padding: 1em;
+	height: auto;
+	display: flex;
+	flex-flow: row wrap;
+	border-radius: 10px;
+	justify-content: center;
+	box-shadow: 0px 0px 10px rgba(19,19,19,0.5);
+}
+
+section article{
+	background-color: #263238;
+	width: 100%;
+	
+	height: auto;
+	display: flex;
+	flex-flow: row wrap;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	justify-content: center;
+}
+
+section article h1{
+	background-color: #E65100;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	width: 100%;
+	padding: 1em;
+	text-align: center;
+	vertical-align: center;
+	color: white;
+}
+
+
+section article input{
+	border-bottom: 1px solid rgba(0,0,0,.2);
+  	border-top: none;
+  	border-left: none;
+  	border-right: none;
+  	background-color: rgba(0, 0, 0, 0.1);
+  	color: #E65100;
+  	width: 80%;
+  	padding: 0.5em;
+  	margin: 1em;
+  	box-shadow: inset 0px 0px 5px rgba(0,0,0,0.9);
+}
+
+ input::placeholder{
+  font-style: italic;
+}
+
+section article button{
+  background-color: #E65100;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(19,19,19,0.5);
+  padding: 1em;
+  color: white!important;
+  cursor: pointer;
+  font-weight: bolder;
+  border:none;
+  margin: 1em;
+}
+
+.result{
+	color: #E65100!important;
+	display: flex;
+	width: 100%;
+	padding: 1em;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 10px;
+	font-style: italic;
+	border-bottom-left-radius:  10px;
+	border-bottom-right-radius:  10px;
+	box-shadow: inset 0px 0px 10px rgba(19,19,19,0.5);
+	text-align: center;
+}
